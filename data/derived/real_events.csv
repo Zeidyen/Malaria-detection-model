@@ -1,0 +1,15 @@
+event,type,year,m_start,m_end,units,note
+E01,flood,2018,9,11,bawkuwest;talensi;bawku;builsanorth,Bagre spillage from 31 Aug 2018 (IFRC MDRGH015; 3news; Graphic)
+E03,flood,2019,10,12,bolgatanga;kasenanankanaeast;bawku;bolgaeast;kasenanankanawest;builsanorth;builsasouth;pusiga;binduri;garu;tempane;bongo;talensi,Upper East floods 6-9 Oct 2019 (IFRC MDRGH016: 13 districts named; Navrongo = Kasena-Nankana)
+E04,flood,2020,9,11,binduri;talensi;builsanorth;bawkuwest;bolgatanga,Upper East floods Aug-Sep 2020 (GNA)
+E05,flood,2020,9,11,mamprugumoagduri;westmamprusi;eastmamprusi;bunkpurugunakpanduri,North East Bagre floods Sep 2020 (Citi); West Mamprusi also Guabuliga dam 1 Oct 2020
+E09,flood,2021,8,10,nadowlikaleo;jirapa;daffiamabussieissa;waeast;wawest;lawra;kumbungu;savelugu,Bagre spillage 27-30 Aug 2021 (Graphic)
+E10,flood,2022,9,11,wawest,Bagre spillage Sep 2022 (Graphic)
+E11,flood,2022,10,12,centralgonja,Black Volta / Bui flooding at Buipe Oct 2022 (Citi)
+E13,flood,2023,10,12,centralgonja,Black Volta flooding at Buipe from 23 Sep 2023; Red Cross warns of malaria upsurge (Graphic)
+E14,flood,2023,10,12,northtongu;centraltongu;southtongu;shaiosudoku;asuogyaman;anloga;adaeast;keta,Akosombo/Kpong spillage from 15 Sep 2023 peak 14-18 Oct (IFRC MDRGH018; Graphic); Anlo = Anloga
+E15,flood,2024,8,10,bawkuwest;talensi;builsasouth;nabdam,Rain floods Aug 2024; Bagre from 19 Aug (Ghanaian Times)
+E16,flood,2025,9,11,talensi,Bagre spillage from 25 Aug 2025 (GNA)
+E17,flood,2025,5,7,gaeast;adenta,Accra floods 18 May 2025 (MyJoyOnline)
+E18,malaria report,2024,5,7,akyemmansa;achiase;birimsouth;birimcentral,~300 hospitalised Jun-Jul 2024 (Ghanaian Times 5 Jul 2024)
+E19,malaria report,2025,4,7,effiakwesimintsim,Kwesimintsim Hospital +22.3% in Q2 2025 (YEN; single outlet)

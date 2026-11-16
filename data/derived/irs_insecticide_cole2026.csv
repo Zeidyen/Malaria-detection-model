@@ -1,0 +1,23 @@
+unit,District,Region,irs_start,y2015,y2016,y2017,y2018,y2019,y2020,y2021,y2022,neonic_first
+bunkpurugunakpanduri,Bunkpurugu-Nakpanduri,North East,2011,AC,AC,AC,AC,AC,SS,SS,FF,2020
+eastmamprusi,East Mamprusi,North East,2009,AC,AC,AC,AC,SS,FF,SS,SS,2019
+mamprugumoagduri,Mamprugu-Moagduri,North East,2008,AC,AC,AC,SS,SS,AC,FF,SS,2018
+westmamprusi,West Mamprusi,North East,2008,AC,AC,AC,AC,SS,SS,FF,FF,2019
+yunyoonasuan,Yunyoo-Nasuan,North East,2011,AC,AC,AC,AC,AC,FF,SS,SS,2020
+gushegu,Gushiegu,Northern,2008,Nsp,Nsp,AC,AC,AC,FF,SS,SS,2020
+karaga,Karaga,Northern,2008,Nsp,Nsp,AC,AC,AC,SS,SS,FF,2020
+kumbungu,Kumbungu,Northern,2008,AC,AC,AC,AC,AC,FF,FF,SS,2020
+builsanorth,Builsa North,Upper East,2013,Nsp,Nsp,AC,AC,SS,SS,SS,FF,2019
+builsasouth,Builsa South,Upper East,2013,Nsp,Nsp,AC,AC,SS,SS,SS,FF,2019
+kasenanankanawest,Kasena-Nankana West,Upper East,2013,Nsp,Nsp,AC,AC,SS,SS,SS,FF,2019
+daffiamabussieissa,Daffiama-Bussie-Issa,Upper West,2012,AC,AC,AC,SS,SS,FF,FF,SS,2018
+jirapa,Jirapa,Upper West,2012,AC,AC,AC,SS,SS,FF,FF,SS,2018
+lambussiekarni,Lambussie,Upper West,2012,AC,AC,AC,AC,SS,SS,SS,FF,2019
+lawra,Lawra,Upper West,2012,AC,AC,AC,AC,SS,SS,SS,FF,2019
+nadowlikaleo,Nadowli-Kaleo,Upper West,2012,AC,AC,AC,SS,SS,FF,SS,SS,2018
+nandom,Nandom,Upper West,2012,AC,AC,AC,AC,SS,SS,SS,FF,2019
+sissalaeast,Sissala East,Upper West,2013,AC,AC,AC,AC,SS,SS,SS,FF,2019
+sissalawest,Sissala West,Upper West,2012,AC,AC,AC,SS,SS,FF,SS,FF,2018
+waeast,Wa East,Upper West,2012,AC,AC,AC,AC,SS,SS,SS,FF,2019
+wa,Wa Municipal,Upper West,2012,AC,AC,AC,AC,SS,FF,FF,SS,2019
+wawest,Wa West,Upper West,2012,AC,AC,AC,AC,SS,SS,FF,FF,2019

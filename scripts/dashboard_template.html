@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghana Malaria Upsurges</title>
+<style>
+:root {
+  --bg: #ffffff; --panel: #f6f7f8; --text: #1d2125; --muted: #5f6b76; --line: #d5dade;
+  --none: #e3e6e9; --tr: #d55e00; --rep: #0072b2; --ind: #cc79a7;
+  --obs: #1d2125; --band: rgba(0, 114, 178, 0.16); --med: #0072b2; --sel: #000000;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15181b; --panel: #1f2327; --text: #e8eaec; --muted: #9aa5af; --line: #3a4046;
+    --none: #30363c; --obs: #e8eaec; --band: rgba(86, 180, 233, 0.22); --med: #56b4e9; --sel: #ffffff;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15181b; --panel: #1f2327; --text: #e8eaec; --muted: #9aa5af; --line: #3a4046;
+  --none: #30363c; --obs: #e8eaec; --band: rgba(86, 180, 233, 0.22); --med: #56b4e9; --sel: #ffffff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header, main, footer { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 18px; }
+h1 { font-size: 20px; margin: 0 0 4px; }
+h2 { font-size: 15px; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 0 0 12px; }
+.note { background: var(--panel); border-left: 3px solid var(--ind); padding: 8px 12px; color: var(--muted); font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 14px 0; }
+.controls label { color: var(--muted); }
+input[type=range] { width: min(420px, 60vw); }
+button, select { font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+#month { font-weight: 600; min-width: 80px; display: inline-block; }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 16px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; }
+svg { display: block; width: 100%; height: auto; }
+#map path { stroke: var(--bg); stroke-width: 0.6; cursor: pointer; }
+#map path.sel { stroke: var(--sel); stroke-width: 2.2; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 4px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+.stats b { color: var(--text); }
+.axis text { fill: var(--muted); font-size: 10px; }
+.axis line, .axis path { stroke: var(--line); }
+.mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 8px; }
+@media (max-width: 560px) { .mini { grid-template-columns: 1fr; } }
+.mini h3 { font-size: 12px; font-weight: 600; margin: 0; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.click { cursor: pointer; }
+tr.click:hover { background: var(--bg); }
+.tablewrap { overflow-x: auto; max-height: 360px; overflow-y: auto; }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font-size: 12px; display: none; z-index: 5; max-width: 260px; }
+.pill { display: inline-block; padding: 0 6px; border-radius: 10px; color: #fff; font-size: 12px; }
+footer { color: var(--muted); font-size: 12px; padding-bottom: 28px; }
+section { margin-top: 16px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Malaria upsurge early detection, Ghana: prototype</h1>
+  <p class="sub">District-month alerts from the final system (expected-cases model with satellite and climate layers,
+    zone adjustment and a likely-cause check), 247 districts, January 2018 to December 2025.</p>
+  <p class="note">Research prototype, supplementary to the paper. Retrospective: each month was predicted from data before it,
+    but this page is not connected to DHIMS2 and is not an operational system. Alerts are statistical signals for review, not confirmed upsurges.</p>
+</header>
+<main>
+  <div class="controls">
+    <button id="prev" aria-label="Previous month">&#9664;</button>
+    <input type="range" id="slider" min="0" max="95" value="0" aria-label="Month">
+    <button id="next" aria-label="Next month">&#9654;</button>
+    <span id="month"></span>
+    <button id="play">Play</button>
+    <label>Colour map by
+      <select id="colour">
+        <option value="alert">Alert and likely cause</option>
+        <option value="ratio">Observed / expected cases</option>
+      </select>
+    </label>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h2 id="maptitle">Alerts</h2>
+      <svg id="map" role="img" aria-label="Map of Ghana districts"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="card">
+      <h2 id="dname">District</h2>
+      <div class="stats" id="dstats"></div>
+      <svg id="ts" viewBox="0 0 640 250" role="img" aria-label="Observed and expected cases"></svg>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--band)"></span>Expected, 95% range</span>
+        <span><span class="sw" style="background:var(--med);height:3px"></span>Expected (median)</span>
+        <span><span class="sw" style="background:var(--obs);height:3px"></span>Observed confirmed cases</span>
+        <span><span class="sw" style="background:var(--tr)"></span>Alert, likely cause: transmission</span>
+        <span><span class="sw" style="background:var(--rep)"></span>reporting</span>
+        <span><span class="sw" style="background:var(--ind)"></span>unclear</span>
+      </div>
+      <div class="mini">
+        <div><h3>Rainfall, mm (CHIRPS)</h3><svg id="m_rain" viewBox="0 0 220 90"></svg></div>
+        <div><h3>NDVI (MODIS)</h3><svg id="m_ndvi" viewBox="0 0 220 90"></svg></div>
+        <div><h3>Air temperature, &deg;C (ERA5-Land)</h3><svg id="m_t2m" viewBox="0 0 220 90"></svg></div>
+      </div>
+    </div>
+  </div>
+  <section class="card">
+    <h2 id="tabtitle">Alerts this month</h2>
+    <div class="tablewrap"><table id="tab"></table></div>
+  </section>
+  <section class="card">
+    <h2>Zone-wide signal: observed / expected cases by ecological zone</h2>
+    <p class="sub" style="margin:0 0 6px">Ratios well above 1 across a whole zone point to a widespread rise (or a reporting change),
+      which the district alerts partly adjust away. Shown for review; no alert threshold is set for it in this prototype.</p>
+    <svg id="zones" viewBox="0 0 1200 200" role="img" aria-label="Zone ratios over time"></svg>
+    <div class="legend" id="zlegend"></div>
+  </section>
+</main>
+<footer>
+  <p>Methods: negative binomial INLA model, refitted monthly on all earlier data (season by zone, spatial district effect, district &times; year
+    AR1, rainfall, land surface temperature, soil moisture, NDVI, ERA5-Land temperature and humidity with 0-3 month lags, land cover and night lights).
+    Alert: observed above the upper 95% limit after the leave-one-out zone adjustment (about 1.6% of district-months).
+    Likely cause: real transmission rise vs reporting change, judged from malaria's share of outpatient visits and test positivity against the same month of the previous three years.
+    Data: DHIMS2 (Ghana Health Service), CHIRPS, MODIS, SMAP, ERA5-Land, VIIRS, Dynamic World, WorldPop.</p>
+</footer>
+<div id="tip"></div>
+<script>
+/*DATA*/
+const NS = "http://www.w3.org/2000/svg";
+const D = DATA.districts, M = DATA.months;
+const CLSN = ["no alert", "alert: transmission", "alert: reporting", "alert: cause unclear"];
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const CLSC = () => [css("--none"), css("--tr"), css("--rep"), css("--ind")];
+let t = 0, sel = D.findIndex(d => d.id === "amansiewest"), timer = null;
+if (sel < 0) sel = 0;
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const fmt = n => n == null ? "-" : n.toLocaleString("en-GB");
+const tip = document.getElementById("tip");
+function showTip(ev, html) { tip.innerHTML = html; tip.style.display = "block"; const x = Math.min(ev.clientX + 12, innerWidth - 270); tip.style.left = x + "px"; tip.style.top = (ev.clientY + 12) + "px"; }
+function hideTip() { tip.style.display = "none"; }
+const monthName = i => { const [y, m] = M[i].split("-"); return new Date(+y, +m - 1, 1).toLocaleString("en-GB", { month: "short", year: "numeric" }); };
+
+// ---- map ----
+let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+D.forEach(d => d.shape.forEach(r => r.forEach(([x, y]) => { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); })));
+const K = 100, map = document.getElementById("map");
+map.setAttribute("viewBox", `0 0 ${(x1 - x0) * K} ${(y1 - y0) * K}`);
+const paths = D.map((d, i) => {
+  const p = el("path", { d: d.shape.map(r => "M" + r.map(([x, y]) => `${((x - x0) * K).toFixed(1)},${((y1 - y) * K).toFixed(1)}`).join("L") + "Z").join("") }, map);
+  p.addEventListener("click", () => { sel = i; draw(); });
+  p.addEventListener("mousemove", ev => {
+    const r = d.med[t] ? d.obs[t] / d.med[t] : null;
+    showTip(ev, `<b>${d.name}</b> (${d.region})<br>${monthName(t)}: ${fmt(d.obs[t])} cases, expected ${fmt(d.med[t])}` +
+      (r ? ` (&times;${r.toFixed(2)})` : "") + `<br>${CLSN[d.cls[t]]}`);
+  });
+  p.addEventListener("mouseleave", hideTip);
+  return p;
+});
+function ratioColour(r) {
+  if (r == null || !isFinite(r)) return css("--none");
+  const v = Math.max(-1, Math.min(1, Math.log2(r)));
+  const a = v >= 0 ? [213, 94, 0] : [0, 114, 178], w = [235, 235, 235];
+  const f = Math.abs(v);
+  return `rgb(${a.map((c, k) => Math.round(w[k] + (c - w[k]) * f)).join(",")})`;
+}
+function drawMap() {
+  const mode = document.getElementById("colour").value, cc = CLSC();
+  D.forEach((d, i) => {
+    paths[i].setAttribute("fill", mode === "alert" ? cc[d.cls[t]] : ratioColour(d.med[t] ? d.obs[t] / d.med[t] : null));
+    paths[i].classList.toggle("sel", i === sel);
+  });
+  paths[sel].parentNode.appendChild(paths[sel]);
+  const n = D.filter(d => d.cls[t] > 0).length;
+  document.getElementById("maptitle").textContent = mode === "alert" ? `Alerts, ${monthName(t)}: ${n} of ${D.length} districts` : `Observed / expected cases, ${monthName(t)}`;
+  document.getElementById("legend").innerHTML = mode === "alert"
+    ? CLSN.map((s, k) => `<span><span class="sw" style="background:${cc[k]}"></span>${s}</span>`).join("")
+    : ["0.5", "0.75", "1", "1.5", "2+"].map((s, k) => `<span><span class="sw" style="background:${ratioColour([0.5, 0.75, 1, 1.5, 2][k])}"></span>${s}</span>`).join("") + "<span>(zone-adjusted expected)</span>";
+}
+
+// ---- time-series charts ----
+function axes(svg, W, H, pad, ymin, ymax, ticksY, yfmt, xlabels) {
+  const g = el("g", { class: "axis" }, svg);
+  const sx = i => pad.l + (W - pad.l - pad.r) * i / 95, sy = v => H - pad.b - (H - pad.t - pad.b) * (v - ymin) / (ymax - ymin || 1);
+  ticksY.forEach(v => { el("line", { x1: pad.l, x2: W - pad.r, y1: sy(v), y2: sy(v), "stroke-dasharray": "2,3" }, g); const tx = el("text", { x: pad.l - 4, y: sy(v) + 3, "text-anchor": "end" }, g); tx.textContent = yfmt(v); });
+  if (xlabels) for (let y = 0; y < 8; y++) { const tx = el("text", { x: sx(y * 12 + 6), y: H - 4, "text-anchor": "middle" }, g); tx.textContent = 2018 + y; }
+  return { sx, sy };
+}
+function niceTicks(lo, hi, n) {
+  const step0 = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(step0 || 1))), err = step0 / mag;
+  const step = (err > 5 ? 10 : err > 2 ? 5 : err > 1 ? 2 : 1) * mag, out = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6));
+  return out;
+}
+function cursor(svg, sx, H, pad) { el("line", { x1: sx(t), x2: sx(t), y1: pad.t, y2: H - pad.b, stroke: css("--muted"), "stroke-width": 1, "stroke-dasharray": "3,2" }, svg); }
+function line(svg, arr, sx, sy, attrs) {
+  let d = "", pen = false;
+  arr.forEach((v, i) => { if (v == null) { pen = false; return; } d += (pen ? "L" : "M") + sx(i).toFixed(1) + "," + sy(v).toFixed(1); pen = true; });
+  return el("path", Object.assign({ d, fill: "none" }, attrs), svg);
+}
+function hoverLayer(svg, W, H, pad, sx, html) {
+  const r = el("rect", { x: pad.l, y: pad.t, width: W - pad.l - pad.r, height: H - pad.t - pad.b, fill: "transparent" }, svg);
+  r.addEventListener("mousemove", ev => {
+    const b = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, x = (ev.clientX - b.left) * vb.width / b.width;
+    const i = Math.max(0, Math.min(95, Math.round((x - pad.l) / (W - pad.l - pad.r) * 95)));
+    showTip(ev, html(i));
+  });
+  r.addEventListener("mouseleave", hideTip);
+  r.addEventListener("click", ev => {
+    const b = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, x = (ev.clientX - b.left) * vb.width / b.width;
+    t = Math.max(0, Math.min(95, Math.round((x - pad.l) / (W - pad.l - pad.r) * 95))); draw();
+  });
+}
+function drawTS() {
+  const d = D[sel], svg = document.getElementById("ts"); svg.innerHTML = "";
+  const W = 640, H = 250, pad = { l: 52, r: 10, t: 10, b: 22 };
+  const hi = Math.max(...d.hi.filter(v => v != null), ...d.obs.filter(v => v != null));
+  const ticks = niceTicks(0, hi, 4), { sx, sy } = axes(svg, W, H, pad, 0, Math.max(hi * 1.03, ticks[ticks.length - 1]), ticks, v => fmt(v), true);
+  let band = "";
+  d.hi.forEach((v, i) => band += (i ? "L" : "M") + sx(i).toFixed(1) + "," + sy(v).toFixed(1));
+  for (let i = 95; i >= 0; i--) band += "L" + sx(i).toFixed(1) + "," + sy(d.lo[i]).toFixed(1);
+  el("path", { d: band + "Z", fill: css("--band"), stroke: "none" }, svg);
+  line(svg, d.med, sx, sy, { stroke: css("--med"), "stroke-width": 1.5 });
+  line(svg, d.obs, sx, sy, { stroke: css("--obs"), "stroke-width": 1.5 });
+  const cc = CLSC();
+  d.cls.forEach((c, i) => { if (c) el("circle", { cx: sx(i), cy: sy(d.obs[i]), r: 4.5, fill: cc[c], stroke: css("--panel"), "stroke-width": 1 }, svg); });
+  cursor(svg, sx, H, pad);
+  hoverLayer(svg, W, H, pad, sx, i => `<b>${monthName(i)}</b><br>observed ${fmt(d.obs[i])}<br>expected ${fmt(d.med[i])} (95%: ${fmt(d.lo[i])}-${fmt(d.hi[i])})<br>${CLSN[d.cls[i]]}`);
+  document.getElementById("dname").textContent = `${d.name} (${d.region}, ${d.zone} zone)`;
+  const nA = d.cls.filter(c => c > 0).length, nT = d.cls.filter(c => c === 1).length;
+  const r = d.med[t] ? d.obs[t] / d.med[t] : null;
+  document.getElementById("dstats").innerHTML =
+    `<span>${monthName(t)}: <b>${fmt(d.obs[t])}</b> cases, expected <b>${fmt(d.med[t])}</b>${r ? ` (&times;${r.toFixed(2)})` : ""}</span>` +
+    `<span>status: <b>${CLSN[d.cls[t]]}</b></span><span>alerts 2018-2025: <b>${nA}</b> (${nT} transmission)</span><span>population ${fmt(d.pop)}</span>`;
+  [["m_rain", d.rain, v => fmt(v), "mm"], ["m_ndvi", d.ndvi, v => v.toFixed(1), ""], ["m_t2m", d.t2m, v => v.toFixed(0), "°C"]].forEach(([id, arr, f, u]) => {
+    const s = document.getElementById(id); s.innerHTML = "";
+    const W2 = 220, H2 = 90, p2 = { l: 30, r: 4, t: 6, b: 6 };
+    const v = arr.filter(x => x != null), lo = Math.min(...v), hi2 = Math.max(...v);
+    const tk = niceTicks(lo, hi2, 3), { sx: a, sy: b } = axes(s, W2, H2, p2, lo, hi2, tk, f, false);
+    line(s, arr, a, b, { stroke: css("--med"), "stroke-width": 1.2 });
+    cursor(s, a, H2, p2);
+    hoverLayer(s, W2, H2, p2, a, i => `${monthName(i)}: ${arr[i] == null ? "-" : f(arr[i])} ${u}`);
+  });
+}
+function drawZones() {
+  const svg = document.getElementById("zones"); svg.innerHTML = "";
+  const W = 1200, H = 200, pad = { l: 40, r: 10, t: 10, b: 22 }, Z = Object.keys(DATA.zones);
+  const all = Z.flatMap(z => DATA.zones[z]), lo = Math.min(0.6, ...all), hi = Math.max(1.6, ...all);
+  const { sx, sy } = axes(svg, W, H, pad, lo, hi, niceTicks(lo, hi, 4), v => v.toFixed(1), true);
+  el("line", { x1: pad.l, x2: W - pad.r, y1: sy(1), y2: sy(1), stroke: css("--muted") }, svg);
+  const cols = { North: "#009e73", Forest: "#e69f00", Coast: "#56b4e9" };
+  Z.forEach(z => line(svg, DATA.zones[z], sx, sy, { stroke: cols[z] || css("--text"), "stroke-width": 1.6 }));
+  cursor(svg, sx, H, pad);
+  hoverLayer(svg, W, H, pad, sx, i => `<b>${monthName(i)}</b><br>` + Z.map(z => `${z}: &times;${DATA.zones[z][i].toFixed(2)}`).join("<br>"));
+  document.getElementById("zlegend").innerHTML = Z.map(z => `<span><span class="sw" style="background:${cols[z]}"></span>${z}</span>`).join("") + "<span>(raw expected, before zone adjustment)</span>";
+}
+function drawTable() {
+  const rows = D.map((d, i) => ({ d, i })).filter(o => o.d.cls[t] > 0).sort((a, b) => b.d.obs[t] / b.d.med[t] - a.d.obs[t] / a.d.med[t]);
+  document.getElementById("tabtitle").textContent = `Alerts, ${monthName(t)} (${rows.length})`;
+  const cc = CLSC();
+  document.getElementById("tab").innerHTML = rows.length ? `<thead><tr><th>District</th><th>Region</th><th class="num">Observed</th><th class="num">Expected</th><th class="num">95% upper</th><th class="num">Ratio</th><th>Likely cause</th></tr></thead><tbody>` +
+    rows.map(({ d, i }) => `<tr class="click" data-i="${i}"><td>${d.name}</td><td>${d.region}</td><td class="num">${fmt(d.obs[t])}</td><td class="num">${fmt(d.med[t])}</td><td class="num">${fmt(d.hi[t])}</td><td class="num">${(d.obs[t] / d.med[t]).toFixed(2)}</td><td><span class="pill" style="background:${cc[d.cls[t]]}">${CLSN[d.cls[t]]}</span></td></tr>`).join("") + "</tbody>"
+    : "<tbody><tr><td>No alerts this month.</td></tr></tbody>";
+  document.querySelectorAll("#tab tr.click").forEach(tr => tr.addEventListener("click", () => { sel = +tr.dataset.i; draw(); }));
+}
+function draw() {
+  document.getElementById("slider").value = t;
+  document.getElementById("month").textContent = monthName(t);
+  drawMap(); drawTS(); drawZones(); drawTable();
+}
+document.getElementById("slider").addEventListener("input", e => { t = +e.target.value; draw(); });
+document.getElementById("prev").addEventListener("click", () => { t = Math.max(0, t - 1); draw(); });
+document.getElementById("next").addEventListener("click", () => { t = Math.min(95, t + 1); draw(); });
+document.getElementById("colour").addEventListener("change", draw);
+document.getElementById("play").addEventListener("click", e => {
+  if (timer) { clearInterval(timer); timer = null; e.target.textContent = "Play"; return; }
+  e.target.textContent = "Pause";
+  timer = setInterval(() => { t = (t + 1) % 96; draw(); }, 700);
+});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+t = M.indexOf("2023-10");
+draw();
+</script>
+</body>
+</html>

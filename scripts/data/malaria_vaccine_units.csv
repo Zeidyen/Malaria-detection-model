@@ -1,0 +1,248 @@
+unit,Region,District,fG,fY,fN,n,phase,product,start,basis
+abuakwanorth,Eastern,Abuakwa North,0.0,0.0,1.0,637,not_vaccinated_by_2025_per_sources,,,none_found
+abuakwasouth,Eastern,Abuakwa South,0.07,0.0,0.93,486,not_vaccinated_by_2025_per_sources,,,none_found
+aburaasebukwamankese,Central,Abura-Asebu-Kwamankese,1.0,0.0,0.0,634,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+accra,Greater Accra,Accra Metro,0.25,0.0,0.75,168,not_vaccinated_by_2025_per_sources,,,none_found
+achiase,Eastern,Achiase,0.0,0.03,0.97,310,not_vaccinated_by_2025_per_sources,,,none_found
+adaeast,Greater Accra,Ada East,0.0,0.02,0.97,385,not_vaccinated_by_2025_per_sources,,,none_found
+adaklu,Volta,Adaklu,0.0,0.99,0.01,250,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+adansiakrofuom,Ashanti,Adansi Akrofuom,0.0,0.03,0.97,834,not_vaccinated_by_2025_per_sources,,,none_found
+adansiasokwa,Ashanti,Adansi Asokwa,0.0,0.0,1.0,463,not_vaccinated_by_2025_per_sources,,,none_found
+adansinorth,Ashanti,Adansi North,0.0,0.0,1.0,666,not_vaccinated_by_2025_per_sources,,,none_found
+adansisouth,Ashanti,Adansi South,0.0,0.0,1.0,517,not_vaccinated_by_2025_per_sources,,,none_found
+adawest,Greater Accra,Ada West,0.0,0.07,0.93,542,not_vaccinated_by_2025_per_sources,,,none_found
+adenta,Greater Accra,Adentan,0.0,0.0,1.0,190,not_vaccinated_by_2025_per_sources,,,none_found
+afadzatosouth,Volta,Afadjato South,0.02,0.98,0.0,184,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+afigyakwabrenorth,Ashanti,Afigya Kwabre North,0.0,0.0,1.0,251,not_vaccinated_by_2025_per_sources,,,none_found
+afigyakwabresouth,Ashanti,Afigya Kwabre South,0.0,0.04,0.96,272,not_vaccinated_by_2025_per_sources,,,none_found
+agonaeast,Central,Agona East,1.0,0.0,0.0,820,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+agonawest,Central,Agona West,0.0,0.99,0.0,515,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+agotimeziope,Volta,Agortime-Ziope,0.0,0.97,0.03,149,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+ahafoanonorth,Ashanti,Ahafo Ano North,0.0,0.03,0.97,422,not_vaccinated_by_2025_per_sources,,,none_found
+ahafoanosoutheast,Ashanti,Ahafo Ano South East,0.0,0.0,1.0,731,not_vaccinated_by_2025_per_sources,,,none_found
+ahafoanosouthwest,Ashanti,Ahafo Ano South West,0.0,0.0,1.0,213,not_vaccinated_by_2025_per_sources,,,none_found
+ahantawest,Western,Ahanta West,0.0,0.01,0.99,376,not_vaccinated_by_2025_per_sources,,,none_found
+ajumakoenyanessiam,Central,Ajumako-Enyan-Essiam,1.0,0.0,0.0,875,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+akatsinorth,Volta,Akatsi North,1.0,0.0,0.0,612,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+akatsisouth,Volta,Akatsi South,1.0,0.0,0.0,586,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+akwapemnorth,Eastern,Akwapim North,0.0,0.0,1.0,321,not_vaccinated_by_2025_per_sources,,,none_found
+akwapemsouth,Eastern,Akwapim South,0.0,0.0,1.0,238,not_vaccinated_by_2025_per_sources,,,none_found
+akyemmansa,Eastern,Akyemansa,0.0,0.0,1.0,571,not_vaccinated_by_2025_per_sources,,,none_found
+amansiecentral,Ashanti,Amansie Central,0.0,0.0,1.0,397,not_vaccinated_by_2025_per_sources,,,none_found
+amansiesouth,Ashanti,Amansie South,0.0,0.06,0.94,279,not_vaccinated_by_2025_per_sources,,,none_found
+amansiewest,Ashanti,Amansie West,0.0,0.0,1.0,743,not_vaccinated_by_2025_per_sources,,,none_found
+anloga,Volta,Anloga,1.0,0.0,0.0,1094,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+aowin,Western North,Aowin,0.0,0.01,0.99,520,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+asanteakimcentral,Ashanti,Asante Akim Central,0.0,0.0,1.0,399,not_vaccinated_by_2025_per_sources,,,none_found
+asanteakimnorth,Ashanti,Asante Akim North,0.0,0.01,0.99,421,not_vaccinated_by_2025_per_sources,,,none_found
+asanteakimsouth,Ashanti,Asante Akim South,0.0,0.0,1.0,494,not_vaccinated_by_2025_per_sources,,,none_found
+aseneakrosomanso,Eastern,Asene Manso Akroso,0.0,0.01,0.99,404,not_vaccinated_by_2025_per_sources,,,none_found
+ashaiman,Greater Accra,Ashaiman,0.0,0.0,1.0,992,not_vaccinated_by_2025_per_sources,,,none_found
+asikumaodobenbrakwa,Central,Asikuma-Odoben-Brakwa,0.98,0.02,0.0,859,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+asokoremampong,Ashanti,Asokore Mampong,0.37,0.0,0.63,411,not_vaccinated_by_2025_per_sources,,,none_found
+assinfosu,Central,Assin Foso,1.0,0.0,0.0,706,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+assinnorth,Central,Assin North,1.0,0.0,0.0,807,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+assinsouth,Central,Assin South,0.0,0.99,0.01,406,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+asunafonorth,Ahafo,Asunafo North,0.95,0.04,0.01,679,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+asunafosouth,Ahafo,Asunafo South,0.0,0.98,0.01,295,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+asuogyaman,Eastern,Asuogyaman,0.0,0.05,0.95,618,not_vaccinated_by_2025_per_sources,,,none_found
+asutifinorth,Ahafo,Asutifi North,1.0,0.0,0.0,613,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+asutifisouth,Ahafo,Asutifi South,0.0,0.95,0.05,158,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+atebubuamantin,Bono East,Atebubu-Amanten,0.0,0.99,0.01,636,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+atiwaeast,Eastern,Atiwa East,0.0,0.0,1.0,194,not_vaccinated_by_2025_per_sources,,,none_found
+atiwawest,Eastern,Atiwa West,0.05,0.0,0.95,471,not_vaccinated_by_2025_per_sources,,,none_found
+atwimakwanwoma,Ashanti,Atwima Kwanwoma,0.0,0.0,1.0,580,not_vaccinated_by_2025_per_sources,,,none_found
+atwimamponua,Ashanti,Atwima Mponua,0.0,0.01,0.99,600,not_vaccinated_by_2025_per_sources,,,none_found
+atwimanwabiagyanorth,Ashanti,Atwima Nwabiagya North,0.0,0.0,1.0,354,not_vaccinated_by_2025_per_sources,,,none_found
+atwimanwabiagyasouth,Ashanti,Atwima Nwabiagya,0.0,0.0,1.0,538,not_vaccinated_by_2025_per_sources,,,none_found
+awutusenya,Central,Awutu Senya,1.0,0.0,0.0,371,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+awutusenyaeast,Central,Awutu Senya East,0.0,0.94,0.06,31,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+ayawasocentral,Greater Accra,Ayawaso Central,1.0,0.0,0.0,2,not_vaccinated_by_2025_per_sources,,,none_found
+ayensuano,Eastern,Ayensuano,0.0,0.0,1.0,460,not_vaccinated_by_2025_per_sources,,,none_found
+banda,Bono,Banda,1.0,0.0,0.0,612,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+bawku,Upper East,Bawku Municipal,0.0,0.89,0.11,132,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bawkuwest,Upper East,Bawku West,0.0,0.98,0.02,433,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bekwai,Ashanti,Bekwai,0.0,0.0,1.0,596,not_vaccinated_by_2025_per_sources,,,none_found
+berekumeast,Bono,Berekum,0.0,1.0,0.0,385,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+berekumwest,Bono,Berekum West,0.0,1.0,0.0,259,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+biaeast,Western North,Bia East,0.0,0.0,0.99,438,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+biakoye,Oti,Biakoye,1.0,0.0,0.0,537,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+biawest,Western North,Bia West,0.0,0.0,1.0,618,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+bibianianhwiasobekwai,Western North,Bibiani-Anhwiaso-Bekwai,0.0,0.08,0.92,333,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+binduri,Upper East,Binduri,0.0,1.0,0.0,650,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+birimcentral,Eastern,Birim Central,0.0,0.0,1.0,453,not_vaccinated_by_2025_per_sources,,,none_found
+birimnorth,Eastern,Birim North,0.0,0.04,0.96,212,not_vaccinated_by_2025_per_sources,,,none_found
+birimsouth,Eastern,Birim South,0.0,0.21,0.79,324,not_vaccinated_by_2025_per_sources,,,none_found
+bodi,Western North,Bodi,0.0,0.08,0.92,132,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+bole,Savannah,Bole,0.0,0.01,0.99,554,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+bolgaeast,Upper East,Bolgatanga East,0.0,1.0,0.0,17,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bolgatanga,Upper East,Bolgatanga Municipal,0.0,1.0,0.0,38,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bongo,Upper East,Bongo,0.0,0.96,0.04,639,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bosomefreho,Ashanti,Bosome Freho,0.0,0.0,1.0,330,not_vaccinated_by_2025_per_sources,,,none_found
+bosomtwe,Ashanti,Bosomtwe,0.0,0.0,1.0,669,not_vaccinated_by_2025_per_sources,,,none_found
+builsanorth,Upper East,Builsa North,0.0,1.0,0.0,695,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+builsasouth,Upper East,Builsa South,0.0,0.97,0.03,345,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+bunkpurugunakpanduri,North East,Bunkpurugu -Nakpanduri,0.0,0.0,1.0,211,not_vaccinated_by_2025_per_sources,,,none_found
+capecoast,Central,Cape Coast,1.0,0.0,0.0,148,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+centralgonja,Savannah,Central Gonja,0.0,0.01,0.99,543,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+centraltongu,Volta,Central Tongu,1.0,0.0,0.0,803,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+chereponi,North East,Chereponi,0.0,0.03,0.97,581,not_vaccinated_by_2025_per_sources,,,none_found
+daffiamabussieissa,Upper West,Daffiama-Bussie-Issa,0.0,0.04,0.96,242,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+denkyembour,Eastern,Denkyembour,0.0,0.0,1.0,494,not_vaccinated_by_2025_per_sources,,,none_found
+dormaa,Bono,Dormaa Municipal,1.0,0.0,0.0,806,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+dormaaeast,Bono,Dormaa East,0.0,0.99,0.01,521,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+dormaawest,Bono,Dormaa West,1.0,0.0,0.0,429,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+eastgonja,Savannah,East Gonja,0.0,0.02,0.98,548,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+eastmamprusi,North East,East Mamprusi,0.0,0.06,0.94,251,not_vaccinated_by_2025_per_sources,,,none_found
+effiakwesimintsim,Western,Effia-Kwesimintsim,0.0,0.0,1.0,342,not_vaccinated_by_2025_per_sources,,,none_found
+effutu,Central,Efutu,0.0,0.97,0.03,94,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+ejisu,Ashanti,Ejisu,0.0,0.0,1.0,201,not_vaccinated_by_2025_per_sources,,,none_found
+ejurasekyedumase,Ashanti,Ejura-Sekyedumase,0.0,0.03,0.97,390,not_vaccinated_by_2025_per_sources,,,none_found
+ekumfi,Central,Ekumfi,1.0,0.0,0.0,926,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+ellembelle,Western,Ellembelle,0.0,0.0,1.0,432,not_vaccinated_by_2025_per_sources,,,none_found
+fanteakwanorth,Eastern,Fanteakwa North,0.04,0.0,0.96,446,not_vaccinated_by_2025_per_sources,,,none_found
+fanteakwasouth,Eastern,Fanteakwa South,0.0,0.0,1.0,170,not_vaccinated_by_2025_per_sources,,,none_found
+gacentral,Greater Accra,Ga Central,0.0,0.0,1.0,280,not_vaccinated_by_2025_per_sources,,,none_found
+gaeast,Greater Accra,Ga East,0.0,0.0,1.0,356,not_vaccinated_by_2025_per_sources,,,none_found
+ganorth,Greater Accra,Ga North,0.0,0.0,1.0,159,not_vaccinated_by_2025_per_sources,,,none_found
+garu,Upper East,Garu,0.0,0.99,0.01,700,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+gasouth,Greater Accra,Ga South,0.0,0.0,1.0,302,not_vaccinated_by_2025_per_sources,,,none_found
+gawest,Greater Accra,Ga West,0.0,0.0,1.0,162,not_vaccinated_by_2025_per_sources,,,none_found
+gomoacentral,Central,Gomoa Central,0.0,0.97,0.03,382,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+gomoaeast,Central,Gomoa East,0.0,1.0,0.0,464,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+gomoawest,Central,Gomoa West,1.0,0.0,0.0,613,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+gushegu,Northern,Gushiegu,0.0,0.01,0.99,474,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+ho,Volta,Ho,0.0,0.99,0.01,552,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+hohoe,Volta,Hohoe + Guan,0.0,0.92,0.08,474,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+howest,Volta,Ho West,0.0,0.99,0.01,197,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+jamannorth,Bono,Jaman North,0.0,0.96,0.04,483,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+jamansouth,Bono,Jaman South,1.0,0.0,0.0,732,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+jasikan,Oti,Jasikan,0.01,0.95,0.03,336,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+jirapa,Upper West,Jirapa,0.0,0.0,1.0,672,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+jomoro,Western,Jomoro,0.0,0.0,0.99,429,not_vaccinated_by_2025_per_sources,,,none_found
+juaben,Ashanti,Juaben,0.0,0.0,1.0,3,not_vaccinated_by_2025_per_sources,,,none_found
+juaboso,Western North,Juaboso,0.0,0.01,0.99,536,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+kadjebi,Oti,Kadjebi,1.0,0.0,0.0,877,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+karaga,Northern,Karaga,0.0,0.01,0.99,531,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+kasenanankanaeast,Upper East,Kasena-Nankana,0.98,0.02,0.0,390,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+kasenanankanawest,Upper East,Kasena-Nankana West,1.0,0.0,0.0,491,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+keta,Volta,Keta,1.0,0.0,0.0,805,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+ketunorth,Volta,Ketu North,1.0,0.0,0.0,695,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+ketusouth,Volta,Ketu South,1.0,0.0,0.0,592,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+kintamponorth,Bono East,Kintampo North,1.0,0.0,0.0,818,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+kintamposouth,Bono East,Kintampo South,1.0,0.0,0.0,614,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+komendaedinaeguafoabirem,Central,Komenda-Edna-Eguafo-Abirem,0.01,0.88,0.11,590,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+korleklottey,Greater Accra,Korle-Klottey,1.0,0.0,0.0,18,not_vaccinated_by_2025_per_sources,,,none_found
+kpandai,Northern,Kpandai,0.0,0.01,0.99,415,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+kpando,Volta,Kpando,1.0,0.0,0.0,780,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+kponekatamanso,Greater Accra,Kpone-Katamanso,0.0,0.09,0.91,93,not_vaccinated_by_2025_per_sources,,,none_found
+krachieast,Oti,Krachi East,0.0,0.99,0.01,542,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+krachinchumuru,Oti,Krachi Nchumuru,1.0,0.0,0.0,670,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+krachiwest,Oti,Krachi West,1.0,0.0,0.0,902,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+krowor,Greater Accra,Krowor,0.41,0.0,0.59,152,not_vaccinated_by_2025_per_sources,,,none_found
+kumasi,Ashanti,Kumasi,0.18,0.0,0.82,283,not_vaccinated_by_2025_per_sources,,,none_found
+kumbungu,Northern,Kumbungu,0.0,0.01,0.99,426,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+kwabreeast,Ashanti,Kwabre East,0.0,0.75,0.25,20,not_vaccinated_by_2025_per_sources,,,none_found
+kwaebibirem,Eastern,Kwaebibirem,0.0,0.0,1.0,591,not_vaccinated_by_2025_per_sources,,,none_found
+kwahuaframplainsnorth,Eastern,Kwahu Afram Plains North,0.0,0.03,0.97,781,not_vaccinated_by_2025_per_sources,,,none_found
+kwahuaframplainssouth,Eastern,Kwahu Afram Plains South,0.0,0.0,1.0,666,not_vaccinated_by_2025_per_sources,,,none_found
+kwahueast,Eastern,Kwahu East,0.0,0.0,1.0,464,not_vaccinated_by_2025_per_sources,,,none_found
+kwahusouth,Eastern,Kwahu South,0.0,0.0,1.0,560,not_vaccinated_by_2025_per_sources,,,none_found
+kwahuwest,Eastern,Kwahu West,0.0,0.0,1.0,304,not_vaccinated_by_2025_per_sources,,,none_found
+ladadekotopon,Greater Accra,La-Dade-Kotopon,0.0,0.0,1.0,730,not_vaccinated_by_2025_per_sources,,,none_found
+lambussiekarni,Upper West,Lambussie,0.0,0.0,1.0,578,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+lankwantanangmadina,Greater Accra,La-Nkwantanang-Madina,0.0,1.0,0.0,44,not_vaccinated_by_2025_per_sources,,,none_found
+lawra,Upper West,Lawra,0.0,0.0,1.0,396,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+ledzokuku,Greater Accra,Ledzokuku,0.0,0.0,1.0,773,not_vaccinated_by_2025_per_sources,,,none_found
+lowermanya,Eastern,Lower Manya-Krobo,0.0,0.0,1.0,260,not_vaccinated_by_2025_per_sources,,,none_found
+mampong,Ashanti,Asante Mampong,0.0,0.0,1.0,515,not_vaccinated_by_2025_per_sources,,,none_found
+mamprugumoagduri,North East,Mamprugu-Moagduri,0.0,0.04,0.96,518,not_vaccinated_by_2025_per_sources,,,none_found
+mfantseman,Central,Mfantseman,0.01,0.91,0.08,92,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+mion,Northern,Mion,0.0,0.02,0.98,298,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+mpohor,Western,Mpohor,0.0,0.0,1.0,612,not_vaccinated_by_2025_per_sources,,,none_found
+nabdam,Upper East,Nabdam,0.0,1.0,0.0,142,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+nadowlikaleo,Upper West,Nadowli-Kaleo,0.0,0.0,1.0,684,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+nandom,Upper West,Nandom,0.01,0.0,0.99,512,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+nanton,Northern,Nanton,0.0,0.0,1.0,564,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+nanumbanorth,Northern,Nanumba North,0.0,0.01,0.99,350,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+nanumbasouth,Northern,Nanumba South,0.0,0.0,1.0,380,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+newjuabennorth,Eastern,New Juaben North,0.0,0.0,1.0,470,not_vaccinated_by_2025_per_sources,,,none_found
+newjuabensouth,Eastern,New Juaben South,0.0,0.0,1.0,482,not_vaccinated_by_2025_per_sources,,,none_found
+ningoprampram,Greater Accra,Ningo Prampram,0.0,0.07,0.93,112,not_vaccinated_by_2025_per_sources,,,none_found
+nkoranzanorth,Bono East,Nkoranza North,1.0,0.0,0.0,820,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+nkoranzasouth,Bono East,Nkoranza South,0.0,0.99,0.01,707,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+nkwantanorth,Oti,Nkwanta North,1.0,0.0,0.0,653,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+nkwantasouth,Oti,Nkwanta South,0.0,0.99,0.01,584,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+northdayi,Volta,North Dayi,1.0,0.0,0.0,621,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+northeastgonja,Savannah,North-East Gonja,0.0,0.0,0.99,617,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+northgonja,Savannah,North Gonja,0.0,0.0,1.0,742,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+northtongu,Volta,North Tongu,0.0,0.96,0.04,559,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+nsawamadoagyiri,Eastern,Nsawam-Adoagyiri,0.0,0.36,0.64,87,not_vaccinated_by_2025_per_sources,,,none_found
+nzemaeast,Western,Nzema East,0.0,0.0,1.0,612,not_vaccinated_by_2025_per_sources,,,none_found
+obuasi,Ashanti,Obuasi,0.0,0.0,1.0,640,not_vaccinated_by_2025_per_sources,,,none_found
+obuasieast,Ashanti,Obuasi East,0.0,0.0,1.0,352,not_vaccinated_by_2025_per_sources,,,none_found
+offinso,Ashanti,Offinso,0.0,0.0,1.0,644,not_vaccinated_by_2025_per_sources,,,none_found
+offinsonorth,Ashanti,Offinso North,0.0,0.14,0.86,202,not_vaccinated_by_2025_per_sources,,,none_found
+okere,Eastern,Okere,0.09,0.0,0.91,589,not_vaccinated_by_2025_per_sources,,,none_found
+presteahunivalley,Western,Prestea-Huni Valley,0.0,0.0,1.0,546,not_vaccinated_by_2025_per_sources,,,none_found
+prueast,Bono East,Pru,1.0,0.0,0.0,851,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+pruwest,Bono East,Pru West,0.99,0.01,0.0,688,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+pusiga,Upper East,Pusiga,0.0,0.89,0.11,217,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+saboba,Northern,Saboba,0.0,0.0,1.0,701,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sagnerigu,Northern,Sagnarigu,0.0,0.0,1.0,463,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+savelugu,Northern,Savelugu,0.0,0.0,1.0,593,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sawlatunakalba,Savannah,Sawla-Tuna-Kalba,0.0,0.01,0.99,723,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sefwiakontombra,Western North,Sefwi-Akontombra,0.0,0.0,1.0,587,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sefwiwiawso,Western North,Sefwi-Wiawso,0.0,0.06,0.94,226,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sekonditakoradi,Western,Sekondi-Takoradi,0.0,0.0,1.0,426,not_vaccinated_by_2025_per_sources,,,none_found
+sekyereaframplainsnorth,Ashanti,Sekyere Afram Plains,0.0,0.0,1.0,500,not_vaccinated_by_2025_per_sources,,,none_found
+sekyerecentral,Ashanti,Sekyere Central,0.0,0.0,1.0,600,not_vaccinated_by_2025_per_sources,,,none_found
+sekyereeast,Ashanti,Sekyere East,0.0,0.05,0.95,57,not_vaccinated_by_2025_per_sources,,,none_found
+sekyerekumawu,Ashanti,Sekyere Kumawu,0.0,0.01,0.98,522,not_vaccinated_by_2025_per_sources,,,none_found
+sekyeresouth,Ashanti,Sekyere South,0.0,0.0,1.0,514,not_vaccinated_by_2025_per_sources,,,none_found
+seneeast,Bono East,Sene East,0.0,0.99,0.01,606,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+senewest,Bono East,Sene West,0.0,0.99,0.01,697,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+shaiosudoku,Greater Accra,Shai-Osudoku,0.0,0.02,0.98,486,not_vaccinated_by_2025_per_sources,,,none_found
+shama,Western,Shama,0.0,0.05,0.95,227,not_vaccinated_by_2025_per_sources,,,none_found
+sissalaeast,Upper West,Sissala East,0.0,0.01,0.99,788,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+sissalawest,Upper West,Sissala West,0.0,0.0,1.0,562,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+southdayi,Volta,South Dayi,1.0,0.0,0.0,512,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+southtongu,Volta,South Tongu,0.0,0.94,0.06,449,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+suaman,Western North,Suaman,0.0,0.1,0.9,377,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+suhum,Eastern,Suhum,0.0,0.0,1.0,550,not_vaccinated_by_2025_per_sources,,,none_found
+sunyani,Bono,Sunyani Municipal,1.0,0.0,0.0,573,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+sunyaniwest,Bono,Sunyani West,0.0,1.0,0.0,608,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+tain,Bono,Tain,0.98,0.02,0.0,872,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+talensi,Upper East,Talensi,0.0,0.98,0.02,339,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+tamale,Northern,Tamale,0.0,0.03,0.97,485,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+tanonorth,Ahafo,Tano North,0.01,0.95,0.04,547,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+tanosouth,Ahafo,Tano South,0.01,0.95,0.04,261,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+tarkwansuaem,Western,Tarkwa-Nsuaem,0.0,0.0,1.0,539,not_vaccinated_by_2025_per_sources,,,none_found
+tatalesanguli,Northern,Tatale-Sangule,0.0,0.02,0.98,213,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+techiman,Bono East,Techiman Municipal,0.01,0.97,0.02,654,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+techimannorth,Bono East,Techiman North,1.0,0.0,0.0,680,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+tema,Greater Accra,Tema,0.18,0.0,0.82,269,not_vaccinated_by_2025_per_sources,,,none_found
+tempane,Upper East,Tempane,0.0,1.0,0.0,535,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+tolon,Northern,Tolon,0.0,0.01,0.99,448,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+twifoattimorkwa,Central,Twifo Ati Morkwa,0.0,0.97,0.03,518,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+twifohemanglowerdenkyira,Central,Twifo-Hemang Lower Denkyira,0.01,0.9,0.09,238,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+upperdenkyiraeast,Central,Upper Denkyira East,0.0,0.85,0.15,289,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+upperdenkyirawest,Central,Upper Denkyira West,0.01,0.83,0.16,135,expansion_2023-02,"RTS,S",2023-02-20,region_statement_93_districts
+uppermanya,Eastern,Upper Manya-Krobo,0.0,0.0,1.0,697,not_vaccinated_by_2025_per_sources,,,none_found
+upperwestakim,Eastern,Upper West Akim,0.0,0.03,0.97,480,not_vaccinated_by_2025_per_sources,,,none_found
+wa,Upper West,Wa Municipal,0.0,0.0,1.0,724,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+waeast,Upper West,Wa East,0.0,0.0,1.0,767,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+wassaamenficentral,Western,Wassa Amenfi Central,0.0,0.0,1.0,606,not_vaccinated_by_2025_per_sources,,,none_found
+wassaamenfieast,Western,Wassa Amenfi East,0.0,0.01,0.99,671,not_vaccinated_by_2025_per_sources,,,none_found
+wassaamenfiwest,Western,Wassa Amenfi West,0.0,0.01,0.99,404,not_vaccinated_by_2025_per_sources,,,none_found
+wassaeast,Western,Wassa East,0.0,0.03,0.97,587,not_vaccinated_by_2025_per_sources,,,none_found
+wawest,Upper West,Wa West,0.0,0.02,0.98,611,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+weijagbawe,Greater Accra,Weija-Gbawe,0.0,0.04,0.96,481,not_vaccinated_by_2025_per_sources,,,none_found
+wenchi,Bono,Wenchi,1.0,0.0,0.0,459,MVIP_pilot_2019-05,"RTS,S",2019-05-01,map_digitised_Adjei2023_Fig1
+westakim,Eastern,West Akim,0.0,0.0,1.0,656,not_vaccinated_by_2025_per_sources,,,none_found
+westgonja,Savannah,West Gonja,0.0,0.0,1.0,617,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+westmamprusi,North East,West Mamprusi,0.0,0.02,0.98,543,not_vaccinated_by_2025_per_sources,,,none_found
+yendi,Northern,Yendi,0.0,0.0,1.0,498,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts
+yilokrobo,Eastern,Yilo-Krobo,0.0,0.0,1.0,177,not_vaccinated_by_2025_per_sources,,,none_found
+yunyoonasuan,North East,Yunyoo-Nasuan,0.0,0.04,0.96,246,not_vaccinated_by_2025_per_sources,,,none_found
+zabzugu,Northern,Zabzugu,0.0,0.0,1.0,521,expansion_2024-09,"R21 (UNICEF) / RTS,S (Graphic, GNA-Ghanamma) - contested",2024-09-25,region_statement_43_districts

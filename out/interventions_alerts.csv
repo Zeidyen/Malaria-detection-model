@@ -1,0 +1,8 @@
+"analysis","term","rr","lo","hi","p","n"
+"A alerts, IRS districts in switch year and year after vs other North district-years","window",3.75513428879757,2.16649644185437,6.50868067654601,2.4168242722798e-06,440
+"A transmission alerts, same contrast","window",4.78202897239809,2.18542502185824,10.4637774639418,8.97003023720422e-05,440
+"B transmission alerts, 1 years since campaign vs campaign year (year effects)","itn_age1",0.66671846000899,0.30701459819963,1.44785787882218,0.305545779984819,1976
+"B transmission alerts, 2 years since campaign vs campaign year (year effects)","itn_age2",0.965884392710429,0.346478395385172,2.69261423658025,0.947091240541065,1976
+"B transmission alerts, 3+ years since campaign vs campaign year (year effects)","itn_age3",1.28755312864706,0.59929119871179,2.76625630853972,0.517138325635151,1976
+"C alerts, SMC districts in SMC months (interaction)","smc_dist:smc_month",1.42857142857858,0.842581272955853,2.42210026742187,0.185462965401439,23712
+"C transmission alerts, same interaction","smc_dist:smc_month",1.40179717584339,0.747525597381572,2.62871977773819,0.292388479306222,23712
